@@ -19,7 +19,7 @@ const SimpleRSVPForm: React.FC = () => {
 
         try {
             const response = await fetch(
-                "https://script.google.com/macros/s/AKfycbxAmzWj3NSzQpo2iIQVgd7NnGiG8wapRSCoy7kHuHPcUjvVKhUzCi5wqT99EP8r0fOOeA/exec", // Replace with your Apps Script Web App URL
+                "https://script.google.com/macros/s/AKfycbzGIdt1YMuq8-ihj0gJnWddD3MuIynUTi5lnPvFCavywl0bV1JTNnD5Jvay6ukRtaDTSA/exec", // Replace with your Apps Script Web App URL
                 {
                     method: "POST",
                     headers: {
@@ -58,7 +58,14 @@ const SimpleRSVPForm: React.FC = () => {
                         value={name}
                         onChange={(e) => setName(e.target.value)}
                         required
-                        style={{ marginLeft: "10px" }}
+                        style={{
+                            marginLeft: "10px",
+                            color: "#000000",
+                            backgroundColor: "#f0f0f0",
+                            borderRadius: "4px",
+                            padding: "5px",
+                            height: "20px",
+                        }}
                     />
                 </label>
             </div>
@@ -68,7 +75,13 @@ const SimpleRSVPForm: React.FC = () => {
                     <select
                         value={rsvp}
                         onChange={(e) => setRSVP(e.target.value)}
-                        style={{ marginLeft: "10px" }}
+                        style={{
+                            marginLeft: "10px",
+                            color: "#000000",
+                            backgroundColor: "#f0f0f0",
+                            borderRadius: "4px",
+
+                        }}
                     >
                         <option value="yes">Yes</option>
                         <option value="maybe">Maybe</option>
@@ -84,7 +97,14 @@ const SimpleRSVPForm: React.FC = () => {
                             type="text"
                             value={dish}
                             onChange={(e) => setDish(e.target.value)}
-                            style={{ marginLeft: "10px" }}
+                            style={{
+                                marginLeft: "10px",
+                                color: "#000000",
+                                backgroundColor: "#f0f0f0",
+                                borderRadius: "4px",
+                                padding: "5px",
+                                height: "20px",
+                            }}
                         />
                     </label>
                 </div>
