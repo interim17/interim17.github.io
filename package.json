@@ -4,12 +4,12 @@
     "homepage": "https://interim17.github.io/",
     "type": "module",
     "scripts": {
-        "build": "react-router build",
+    "build": "react-router build",
+    "deploy": "npm run build && rm -rf docs && mkdir docs && cp -r build/client/* docs/",
         "dev": "react-router dev",
         "start": "react-router-serve ./build/server/index.js",
         "typecheck": "react-router typegen && tsc",
-        "predeploy": "npm run build",
-        "deploy": "gh-pages -d build"
+        "predeploy": "npm run build"
     },
     "dependencies": {
         "@react-router/node": "^7.5.0",
