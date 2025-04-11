@@ -1,0 +1,142 @@
+.container {
+    display: flex;
+    flex-direction: row-reverse;
+    width: 100%;
+    height: 100vh; /* full viewport height */
+    padding: 20px;
+    box-sizing: border-box;
+    overflow: auto;
+}
+
+.text-container {
+    flex: 1;
+    padding: 0 20px;
+    /* overflow-y: auto; */
+}
+
+.title-section {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.section {
+    margin-bottom: 20px;
+    background-color: rgb(45, 43, 49);
+    padding: 10px;
+    max-width: 500px;
+}
+
+.lamb-roast-image {
+    flex: 1;
+    max-width: 40%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.lamb-roast-image img {
+ max-height: 100%;
+    max-width: 100%;
+    object-fit: contain;
+    margin-bottom: 30px;
+}
+
+/* Form styles (unchanged) */
+.form-input {
+    margin-left: 10px;
+    color: #000000;
+    background-color: #f0f0f0;
+    border-radius: 4px;
+    padding: 5px;
+    height: 15px;
+}
+
+.form-select {
+     margin-left: 10px;
+    color: #000000;
+    background-color: #f0f0f0;
+    border-radius: 4px;
+    padding: 5px 10px;
+    height: 32px;
+    font-size: 16px;
+    text-align-last: center;
+}
+
+.rsvp-form {
+    max-width: 400px;
+}
+
+.form-group {
+    margin-bottom: 10px;
+}
+
+.rsvp-buttons-label {
+    margin-bottom: 6px;
+    font-weight: bold;
+}
+
+.rsvp-buttons {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.rsvp-button {
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 6px 12px;
+    cursor: pointer;
+    color: #000;
+    font-size: 14px;
+    transition: background-color 0.2s ease;
+}
+
+.rsvp-button:hover {
+    background-color: #e0e0e0;
+}
+
+.rsvp-button.active {
+    background-color: #450d46;
+    color: #fff;
+    border-color: #e790ee;
+}
+
+.submit-button-disabled {
+    background-color: #ccc;
+    color: #666;
+}
+
+
+.feedback {
+    margin-top: 10px;
+    font-style: italic;
+}
+
+/* 🔄 Mobile styles */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .lamb-roast-image {
+        max-width: 100%;
+        height: auto;
+        margin-top: 20px;
+    }
+
+    .lamb-roast-image img {
+        width: 100%;
+        max-height: 300px;
+        object-fit: contain;
+    }
+
+    .section {
+        width: 100%;
+        max-width: none;
+    }
+}

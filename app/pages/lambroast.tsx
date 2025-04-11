@@ -1,40 +1,63 @@
 import React from "react";
-import RSVPForm from "~/components/rsvp";
+import RSVPForm from "../components/rsvp";
 
-const LambRoast: React.FC = () => {
+import lambChop from "../../public/lambchop.png";
+
+import "../styles/lambroast.css";
+
+export const LambRoast: React.FC = () => {
     return (
-        <div style={{ padding: "20px" }}>
-            <div style={{ marginBottom: "10px" }}>
-                5/17 Housewarming Lamb Roast
+        <div className="container">
+                        <div className="lamb-roast-image">
+                <img src={lambChop} alt="Lamb Roast" />
             </div>
-            <div style={{ marginBottom: "20px" }}>
-                <div>
-                    Come for dinner, or hang around the yard all day, or both.
+            <div className="text-container">
+                <div className="title-section">
+                    <div className="section title-section">
+                        5/17 Housewarming Lamb Roast @ 531 26th Ave S{" "}
+                    </div>{" "}
+                    <br></br>{" "}
                 </div>
-                <div> A few places to crash avaialable for out of towners.</div>
-            </div>
-
-            <div style={{ marginBottom: "20px" }}>
-                <div> RSVP </div>
-                {/* add buttons and functionaly for people to say they are coming, a maybe, not coming, bringin a dish etc */}
-            </div>
-
-            <div style={{ marginBottom: "20px" }}>
-                <div> Schedule: </div>
-                <div> 2pm - 7pm watching the spit turn and doing nothing </div>
-                <div> 7pm - Late dinner in the yard </div>
-            </div>
-            <div style={{ marginBottom: "20px" }}>
-                <RSVPForm />
-            </div>
-            <div style={{ marginBottom: "20px" }}>
-                <div>
-                    {" "}
-                    Not need to bring anything but if you want to, and you know
-                    what it is, feel free to add below so we can prevent
-                    duplicates:{" "}
+                <div className="section">
+                    <div>
+                        Come pull dandelions out with your teeth, climb a tree,
+                        get basted, leap over the coals, boogie, feast, etc.
+                    </div>
+                    <br></br>
+                    <div>We'll be roasting veggies and meat on a spit.</div>
+                    <br></br>
+                    <div>
+                        {" "}
+                        Bring a beverage and a camp chair if you can, we may be low on seating.{" "}
+                    </div>
                 </div>
-                {/* todo add table for offerings */}
+                <div className="section">
+                    <div>Schedule:</div>
+                    <div>
+                        12 to 7 is watching the spit turn and doing nothing of
+                        any value
+                    </div>
+                    <div>Main event is 7 to late, dinner in the yard</div>
+                </div>
+                <div className="section">
+                    <div>
+                        No need to bring food but if you want to lmk what you
+                        are thinking so we don't duplicate too much.
+                    </div>
+                    <br></br>
+                    <div>
+                        Want to DJ or tattoo people or do something else to make
+                        it weird, mention below:
+                    </div>
+                </div>
+                <div className="section">
+                    <div>RSVP</div>
+                    <RSVPForm />
+                </div>
+                <div className="section">
+                    <div>See you soon.</div>
+                    <div>- Rue, Joe, and Behemoth</div>
+                </div>
             </div>
         </div>
     );

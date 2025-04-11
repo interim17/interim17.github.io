@@ -4,30 +4,26 @@
     "homepage": "https://interim17.github.io/",
     "type": "module",
     "scripts": {
-    "build": "react-router build",
-    "deploy": "npm run build && rm -rf docs && mkdir docs && cp -r build/client/* docs/",
-        "dev": "react-router dev",
-        "start": "react-router-serve ./build/server/index.js",
-        "typecheck": "react-router typegen && tsc",
-        "predeploy": "npm run build"
+        "dev": "vite",
+        "build": "vite build",
+        "preview": "vite preview",
+        "deploy": "npm run build && rm -rf docs && mkdir docs && cp -r dist/* docs/"
     },
     "dependencies": {
         "@react-router/node": "^7.5.0",
         "@react-router/serve": "^7.5.0",
         "isbot": "^5.1.17",
-        "react": "^19.0.0",
-        "react-dom": "^19.0.0",
-        "react-router": "^7.5.0",
-        "react-router-dom": "^7.5.0"
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.14.2"
     },
     "devDependencies": {
-        "@react-router/dev": "^7.5.0",
         "@tailwindcss/vite": "^4.0.0",
         "@types/node": "^20",
         "@types/react": "^19.0.1",
         "@types/react-dom": "^19.0.1",
+        "@vitejs/plugin-react": "^4.3.4",
         "react-router-devtools": "^1.1.0",
-        "tailwindcss": "^4.0.0",
         "typescript": "^5.7.2",
         "vite": "^5.4.11",
         "vite-tsconfig-paths": "^5.1.4"

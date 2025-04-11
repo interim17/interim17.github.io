@@ -1,7 +1,9 @@
-import Header from "~/components/header";
-import { Link } from "react-router";
+import Header from "../components/header";
+import { Link } from "react-router-dom";
 
-export function Welcome() {
+import "../app.css"
+
+export default function Welcome() {
 
     return (
         <main className="flex items-center justify-center pt-16 pb-4">
