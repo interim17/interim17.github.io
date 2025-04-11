@@ -4,6 +4,7 @@ import RSVPForm from "../components/rsvp";
 import lambChop from "../../public/lambchop.png";
 
 import "../styles/lambroast.css";
+import "../app.css"
 
 export const LambRoast: React.FC = () => {
     return (

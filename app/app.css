@@ -10,12 +10,3 @@ body {
   color: #fff;
   line-height: 1.5;
 }
-
-/* For dark mode (optional) */
-@media (prefers-color-scheme: dark) {
-  html,
-  body {
-    background-color: #111;
-    color: #fff;
-  }
-}
