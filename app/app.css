@@ -1,12 +1,14 @@
 :root {
-  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif,
-    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif,
+        "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
+        "Noto Color Emoji";
 }
 
 html,
 body {
-  font-family: var(--font-sans);
-  background-color: #000;
-  color: #fff;
-  line-height: 1.5;
+    font-family: var(--font-sans);
+    background-color: #000;
+    color: #fff;
+    line-height: 1.5;
+    color-scheme: only dark;
 }
