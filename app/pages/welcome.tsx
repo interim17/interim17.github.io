@@ -1,5 +1,4 @@
 import Header from "../components/header";
-import { Link } from "react-router-dom";
 
 import "../app.css"
 
